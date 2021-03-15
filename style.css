@@ -1,0 +1,29 @@
+div{
+    background-color: brown;
+    width:200px ;
+    height:200px ;
+    border:1px solid black
+}
+#div1 {
+    background-color: rgb(87, 23, 23);
+    width:200px ;
+    height:200px ;
+    border:1px solid rgb(0, 0, 0)
+}
+#div2{
+    background-color: rgb(87, 23, 23);
+    width:200px ;
+    height:200px ;
+    border:1px solid rgb(0, 0, 0)
+}
+#div3{
+    background-color: rgb(87, 23, 23);
+    width:200px ;
+    height:200px ;
+    border:1px solid rgb(0, 0, 0)
+}
+.js109 {
+    
+}
+.redtext{
+}
