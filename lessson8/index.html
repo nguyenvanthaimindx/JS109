@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <form id="input" action="">
+        <input name="city" type="text">
+        <buttom>Submit</buttom>
+
+    </form>
+       <div>
+           <h1>50C</h1>
+           <h1>Ha Noi</h1>
+
+       </div>
+  
+    
+
+
+  <script>
+  let getData= async () =>{
+      try{
+          let sespone = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=$={hanoi}&appid=2ad164d5968e89fac9cdbd66de891f69`)
+    console.log(sespone);
+
+        }catch (err){
+            console.log(err);
+        }
+
+
+  }
+
+  getData()
+
+
+
+    </script>
+</body>
+</html>
+// BTVN : Tên TP : hà nội,VN
+Trời có mây
+Độ C

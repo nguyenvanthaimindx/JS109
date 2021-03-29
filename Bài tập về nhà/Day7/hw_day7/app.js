@@ -60,5 +60,10 @@ inputForm.addEventListener('submit', (event) => {
     inputForm.name.value = "";
 })
 localStorage.setItem('myData', JSON.stringify(myCafe));
-let cafe =  JSON.parse(localStorage.getItem(myCafe));
+
+function getData(){
+    let cafe =  JSON.parse(localStorage.getItem(myCafe));
+ 
+}
+getData()
 console.log(cafe);
