@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- <script>
+        index.js
+        
+    </script> -->
+</head>
+<body>
+// P2.B
+    <script src="./index.js"></script>
+
+<div class="container">
+    <div class="namegame">
+      <h1 id="Lucky">Lucky Number</h1>
+    </div>
+    <div class="game">
+      <h2>chữ dài</h2>
+      <form>
+          <input id="nhập số" type="text" /> 
+      <button onclick="myfuntion()">QUAY SỐ</button>
+      </form>
+      
+    </div>
+  </div>
+  <script>
+    function myfuntion(){
+        let a = document.getElementById("nhập số").value;
+        let x = (Math.floor(Math.random() * 101));
+        if(a==x){
+          alert("bạn đã trúng thưởng")
+        }
+        else{
+            alert("chúc bạn may mắn lần sau")
+          alert(" số trúng thưởng là "+ x);
+
+        }
+    }
+  </script>
+
+</body>
+</html>
+

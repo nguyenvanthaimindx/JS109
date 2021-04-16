@@ -22,15 +22,15 @@ db.collection("cafes").doc(id).delete();
 });
 }
 // getting data
-db.collection("cafes")
-  .get()
-  .then((snapshot) => {
-    console.log(snapshot);
-    snapshot.docs.forEach(doc => {
-      console.log(doc.data())
-    });
-  });
-  form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      db.collection("cafe").add
-  }
+// db.collection("cafes")
+//   .get()
+//   .then((snapshot) => {
+//     console.log(snapshot);
+//     snapshot.docs.forEach(doc => {
+//       console.log(doc.data())
+//     });
+//   });
+//   form.addEventListener("submit", (event) => {
+//       event.preventDefault();
+//       db.collection("cafe").add
+//   }

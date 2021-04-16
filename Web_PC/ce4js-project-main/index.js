@@ -88,3 +88,38 @@ const lp = {
   ],
 };
 console.log(JSON.stringify(lp));
+
+
+
+
+
+
+
+//B. Code challenge
+let count = 3;
+const form = document.querySelector("form");
+function getRandom(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+const luckyNumber = getRandom(1, 10);
+form.onsubmit = (event) => {
+  event.preventDefault();
+  const number = parseInt(form.number.value);
+  if (!Number.isInteger(number) || number < 1 || number > 10) {
+    alert("Vui lòng nhập lại!Con số bạn nhập không thoả mãn!");
+  } else {
+    count--;
+    if (count > 0) {
+      if (number == luckyNumber) {
+        alert("Chúc mừng bạn! Bạn đã đoán đúng!");
+        location.reload();
+      } else {
+        alert("Thật tiếc! Bạn đã đoán sai! Bạn còn ${count} lần đoán!");
+      }
+    } else {
+      alert("Thật tiếc! Bạn đã hết lượt!");
+      location.reload();
+    }
+    form.number.value = "";
+  }
+};
